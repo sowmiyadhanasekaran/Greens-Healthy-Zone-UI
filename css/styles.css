@@ -19,17 +19,16 @@ h2{
 }
 h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 p{
-    color: #5F939A;
+    color: #F7F7E8;
 }
 /*title section*/
 .container-fluid{
-    padding: 3% 15% !important;
+    padding: 3% 15%;
 }
-#title{
-    background-color: #ff8882;
-}
+
 .navbar{
     padding: 0 0;
 }
@@ -52,6 +51,7 @@ p{
     margin: 5% 3% 5% 0;
 }
 .title-img{
+    width: 60%;
     transform: rotate(-10deg);
     margin: 10%;
     
@@ -67,15 +67,13 @@ p{
 }
 .icon{
     margin-bottom: 1rem;
-    color: green;
+    color: #FDFFBC;
 }
 .icon:hover{
     color: #C0E218;
 }
 /*items section*/
 #testimonials{
-    
-    background-color: #ff8882;
     color: white;
     text-align: center;
 }
@@ -87,40 +85,17 @@ p{
 .carousel-item{
     padding: 7% 15%;   
 }
+
+/*ordering section*/
+
 #ordering{
-    background-image: url(image/background.jpg);
     padding: 5% 25%;
 }
 .card-body{
     text-align: center;
 }
-
-#contact{
-    background-color: #ff8882;
-    padding: 5% 15%;
+.card-text, .footername{
     color: #564A4A;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-table{
-    margin:5% 0 0 15%;
-}
-.contact-icons{
-    color: #2F5D62;
-    
-}
-
-.mail{
-    color: #564A4A;
-}
-#footer{
-    padding: 10px 15%;
-    text-align: center;
-    background-color: white;
-}
-.social-media{
-    margin: 25px 20px;
 }
 #orderform{
     color: white;
@@ -129,10 +104,55 @@ table{
     font-size: 1.5rem;
     
 }
-
 .submit-button{
     margin: 3% 0 0 50%;
 }
+
+/*contact section*/
+
+#contact{
+    padding: 5% 15%;
+    color: #564A4A;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-title{
+    color: #5D534A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+
+/*footer section*/
+
+#footer{
+    padding: 10px 15%;
+    text-align: center;
+    background-color: white;
+}
+.social-media{
+    margin: 25px 20px;
+}
+
+/*media breakpoint*/
 @media (max-width: 1024px){
     .title-img{
         transform: rotate(0);
@@ -147,7 +167,31 @@ table{
         font-size: 0.5rem;
         
     }
+    .contact-title{
+        font-size: 2rem;
+    }
     .submit-button{
         margin-left: 90px;
     }
+    .navbar-title{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .testimonials-img{
+        width: 60%;
+    }
+    h2{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .bulkorder-card{
+         width: 255px;
+         height: 320px;
+    }
+    #ordering{
+        
+        padding: 5% 16%;
+    }
+
 }
+
